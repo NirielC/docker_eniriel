@@ -1,0 +1,59 @@
+/* ---------- Paleta de colores y tipografía de "Retoma" ---------- */
+:root {
+  /* Colores de la marca */
+  --rojo: #6f060d; /* Dark red */
+  --azul: #96a6c5; /* Sky blue */
+  --mantequilla: #f7edc4; /* Butter cream */
+  --rosa: #ebdfd5; /* Rose cream */
+
+  /* Colores de apoyo */
+  --rojo-hover: #8a0f18;
+  --fondo: #f4ede6;
+  --papel: #fdfaf6;
+  --tinta: #2b0a0e;
+  --tinta-suave: #6e5a5c;
+  --linea: #e2d5ca;
+  --exito: #3d7a55;
+  --exito-fondo: #e3efe6;
+  --error-fondo: #f6e4e2;
+
+  /* Fuentes: Instrument Serif reemplaza a Adogare (títulos) y Montserrat para textos */
+  --fuente-titulo: 'Instrument Serif', 'Adogare', Georgia, serif;
+  --fuente-texto: 'Montserrat', system-ui, sans-serif;
+  --fuente-codigo: ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  font-family: var(--fuente-texto);
+  color: var(--tinta);
+  background: var(--fondo);
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--fondo);
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 3px solid var(--azul);
+  outline-offset: 3px;
+}
+
+em {
+  font-style: italic;
+}
